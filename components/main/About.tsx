@@ -18,7 +18,7 @@ const About = () => {
           <h2 className="text-4xl md:text-7xl text-center md:text-start font-bold mb-4">
             About Us
           </h2>
-          <p className="text-xl md:text-2xl text-center md:text-start text-gray-500">
+          <p className="text-xl md:text-2xl text-start text-gray-500">
             Welcome to the vibrant world of Nirmaan, Poornima University&apos;s
             premier technical festival! Rooted in innovation and boundless
             creativity, Nirmaan ignites a spirit of exploration and

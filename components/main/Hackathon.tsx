@@ -9,7 +9,7 @@ const Hackathon = () => {
   return (
     <section
       id="hackathon"
-      className="h-fit flex flex-col md:flex-row items-center justify-center py-12 mx-4 px-4 lg:px-8"
+      className="h-fit flex flex-col md:flex-row items-center justify-center py-12 mx-4 lg:px-8"
     >
       {/* Image */}
       <div className="w-full md:w-1/3 p-4">
@@ -36,7 +36,7 @@ const Hackathon = () => {
             <Button  onClick={()=>router.push('/')} className="text-lg" variant={"outline"}>
               👁 View Details
             </Button>
-            <Button onClick={()=>router.push('/register')} className="text-lg">Register</Button>
+            <Button onClick={()=>router.push('/')} className="text-lg">Register</Button>
         </div>
       </div>
     </section>

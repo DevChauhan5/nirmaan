@@ -52,7 +52,7 @@ const OurTeam = () => {
     >
       <h1 className="text-5xl font-bold text-center mb-8">Meet Our Team</h1>
 
-      <Marquee pauseOnHover gradient gradientColor="yellow" gradientWidth={20} className="rounded-xl  w-full">
+      <Marquee pauseOnHover className="rounded-xl  w-full">
         {teamMembers.map((member) => (
           <div
             key={member.name}
@@ -68,7 +68,7 @@ const OurTeam = () => {
               />
             </div>
             <div className="mt-4 text-center flex flex-col items-center justify-center">
-              <h3 className="text-2xl font-bold text-gray-400 hover:text-yellow-400">
+              <h3 className="text-2xl font-bold text-gray-400 hover:text-primary">
                 {member.name}
               </h3>
               {member.role === "Lead Organizer" ? (

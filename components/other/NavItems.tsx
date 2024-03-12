@@ -45,7 +45,7 @@ const components: { title: string; href: string; description: string }[] = [
   },
   {
     title: "Register ↗️",
-    href: "/register",
+    href: "/",
     description: "Register for Nirmaan'24 now.",
   },
 ];

@@ -57,7 +57,7 @@ const OurSponsors = () => {
     <section id="sponsors" className="px-4 md:px-8 lg:px-16 py-16">
       <h2 className="text-5xl font-bold text-center mb-8">Our Sponsors</h2>
 
-      <Marquee pauseOnHover gradient gradientColor="yellow" gradientWidth={20} className="rounded-xl  w-full">
+      <Marquee pauseOnHover  className="rounded-xl  w-full">
         {sponsors.map((sponsor) => (
           <TooltipProvider key={sponsor.name}>
             <Tooltip>

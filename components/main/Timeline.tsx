@@ -7,7 +7,7 @@ import { useRouter } from "next/navigation";
 const Timeline = () => {
   const router = useRouter();
   return (
-    <section id="timeline" className="h-fit py-12 px-6 flex flex-col items-center justify-center">
+    <section id="timeline" className="h-fit py-12 mx-4 flex flex-col items-center justify-center">
       <h1 className="text-5xl font-bold py-4 px-4 lg:px-8">Timeline</h1>
       <ol className="relative border-s mt-4 border-gray-200 dark:border-gray-700">
 
@@ -32,7 +32,7 @@ const Timeline = () => {
           <p className="mb-4 text-base font-normal text-gray-500 dark:text-gray-400">
           Save the date! Registration opens on 6th March. Join us for an unforgettable experience filled with tech insights, innovation, and networking. Secure your spots now!
           </p>
-          <Button onClick={()=>router.push('/register')} className="text-lg">Register Now!</Button>
+          <Button onClick={()=>router.push('/')} className="text-lg">Register Now!</Button>
         </li>
 
         <li className="mb-10 ms-6">
