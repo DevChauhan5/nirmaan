@@ -1,5 +1,4 @@
 export { default as About } from './About';
-export { default as Events } from './Events';
 export { default as Faq } from './Faq';
 export { default as Hackathon } from './Hackathon';
 export { default as Hero } from './Hero';

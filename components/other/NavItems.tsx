@@ -28,20 +28,10 @@ const components: { title: string; href: string; description: string }[] = [
       "Choose from a variety of themes and build projects based on them.",
   },
   {
-    title: "Events",
-    href: "/#events",
-    description: "A series of events and workshops to help you learn and grow.",
-  },
-  {
     title: "Our Team",
     href: "#our-team",
     description:
       "Nirmaan'24 is organized by a team of passionate students from Poornima University.",
-  },
-  {
-    title: "Our Sponsors",
-    href: "/#sponsors",
-    description: "Sponsors who have helped us make Nirmaan'24 possible.",
   },
   {
     title: "Register ↗️",

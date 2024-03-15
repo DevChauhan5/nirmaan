@@ -1,6 +1,5 @@
 import {
   About,
-  Events,
   Faq,
   Footer,
   Hackathon,
@@ -26,15 +25,13 @@ export default function Home() {
       <Separator />
       <HackathonThemes />
       <Separator />
-      <Events />
-      <Separator />
       <Timeline />
       <Separator />
       <OurTeam />
       <Separator />
       <Faq />
-      <Separator />
-      <OurSponsors />
+      {/* <Separator />
+      <OurSponsors /> */}
       <Separator />
       <Footer />
       <Separator />

@@ -17,7 +17,7 @@ const Navbar = () => {
   return (
     <nav className="z-40 absolute bg-background shadow-md shadow-primary flex items-center justify-between py-4 tracking-wide w-full px-4 lg:px-12">
       <div className="flex items-center justify-center">
-        <Link href={"/"} className="text-3xl lg:text-3xl font-extrabold bg-clip-text text-transparent bg-[linear-gradient(to_right,theme(colors.violet.400),theme(colors.violet.300),theme(colors.violet.200),theme(colors.violet.300),theme(colors.violet.400))] bg-[length:200%_auto] animate-gradient">
+        <Link href={"/"} className="text-3xl lg:text-3xl font-extrabold bg-clip-text text-transparent bg-[linear-gradient(to_right,theme(colors.yellow.400),theme(colors.yellow.300),theme(colors.orange.200),theme(colors.yellow.300),theme(colors.yellow.400))] bg-[length:200%_auto] animate-gradient">
           NIRMAAN&apos;24
         </Link>
       </div>
@@ -65,8 +65,8 @@ const Navbar = () => {
               <Link className="sidebar-text" href={"#hackathon"}>
                 <div onClick={toggleSidebar}>Hackathon</div>
               </Link>
-              <Link className="sidebar-text" href={"#events"}>
-                <div onClick={toggleSidebar}>Events</div>
+              <Link className="sidebar-text" href={"#themes"}>
+                <div onClick={toggleSidebar}>Themes</div>
               </Link>
               <Link className="sidebar-text" href={"/"}>
                 <div onClick={toggleSidebar}>Register Now ↗️</div>

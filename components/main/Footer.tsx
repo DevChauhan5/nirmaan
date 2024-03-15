@@ -76,10 +76,10 @@ const Footer = () => {
             Hackathon
           </Link>
           <Link
-            href="/#events"
+            href="/#themes"
             className="text-lg text-gray-400 hover:text-yellow-400 transition duration-300"
           >
-            Events
+            Themes
           </Link>
           <Link
             href="/#timeline"

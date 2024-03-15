@@ -15,9 +15,9 @@ const Hero = () => {
         <video loop autoPlay muted className="z-[-2] absolute top-0 left-0 w-full h-full object-cover opacity-20">
           <source src="/hero-vid.webm" type="video/webm" />
         </video>
-        <h1 className="text-6xl mt-32 mb-4 uppercase md:text-9xl lg:text-[10rem] font-extrabold bg-clip-text text-transparent bg-[linear-gradient(to_right,theme(colors.violet.400),theme(colors.violet.300),theme(colors.violet.200),theme(colors.violet.300),theme(colors.violet.400))] bg-[length:200%_auto] animate-gradient">NIRMAAN&#39;24</h1>
+        <h1 className="text-6xl mt-32 mb-4 uppercase md:text-9xl lg:text-[10rem] font-extrabold bg-clip-text text-transparent bg-[linear-gradient(to_right,theme(colors.yellow.400),theme(colors.yellow.300),theme(colors.orange.200),theme(colors.yellow.300),theme(colors.yellow.400))] bg-[length:200%_auto] animate-gradient">NIRMAAN&#39;24</h1>
         <Suspense fallback={<div>Loading...</div>}>
-        <p className="text-xl mb-10 uppercase md:text-4xl lg:text-5xl font-extrabold bg-clip-text text-transparent bg-[linear-gradient(to_right,theme(colors.purple.400),theme(colors.purple.300),theme(colors.purple.200),theme(colors.purple.300),theme(colors.purple.400))] bg-[length:200%_auto] animate-gradient">
+        <p className="text-xl mb-10 uppercase md:text-4xl lg:text-5xl font-extrabold bg-clip-text text-transparent bg-[linear-gradient(to_right,theme(colors.yellow.400),theme(colors.yellow.300),theme(colors.orange.200),theme(colors.yellow.300),theme(colors.yellow.400))] bg-[length:200%_auto] animate-gradient">
         <TypeAnimation
               sequence={[
                 'It\'s not just a hackathon',
@@ -41,7 +41,7 @@ const Hero = () => {
             <Link href={'/'}>Register Now</Link>
           </Button>
           <Button size={'lg'} variant={'secondary'} className="text-xl">
-            Learn More
+            View Schedule
           </Button>
         </div>
     </section>

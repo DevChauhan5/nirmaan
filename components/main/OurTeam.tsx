@@ -50,7 +50,7 @@ const OurTeam = () => {
       id="our-team"
       className="px-4 md:px-8 py-16"
     >
-      <h1 className="text-5xl font-bold text-center mb-8">Meet Our Team</h1>
+      <h1 className="heading gradient-text mb-8">Meet Our Team</h1>
 
       <Marquee pauseOnHover className="rounded-xl  w-full">
         {teamMembers.map((member) => (

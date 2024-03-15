@@ -15,27 +15,11 @@ const About = () => {
       {/*Text content */}
       <div className="w-full md:w-2/3 p-4">
         <div className="max-w-fit mx-auto">
-          <h2 className="text-4xl md:text-7xl text-center md:text-start font-bold mb-4">
+          <h2 className="heading text-center md:text-start font-bold mb-4 gradient-text">
             About Us
           </h2>
           <p className="text-xl md:text-2xl text-start text-gray-500">
-            Welcome to the vibrant world of Nirmaan, Poornima University&apos;s
-            premier technical festival! Rooted in innovation and boundless
-            creativity, Nirmaan ignites a spirit of exploration and
-            collaboration. Our hallmark event, the Hackathon, stands as a
-            testament to our commitment to fostering ingenuity. From riveting
-            workshops to exhilarating competitions, Nirmaan offers a platform
-            where students can showcase their talents and connect with industry
-            leaders. Join us as we celebrate technology, ideas, and the
-            relentless pursuit of excellence. Welcome to the vibrant world of Nirmaan, Poornima University&apos;s
-            premier technical festival! Rooted in innovation and boundless
-            creativity, Nirmaan ignites a spirit of exploration and
-            collaboration. Our hallmark event, the Hackathon, stands as a
-            testament to our commitment to fostering ingenuity. From riveting
-            workshops to exhilarating competitions, Nirmaan offers a platform
-            where students can showcase their talents and connect with industry
-            leaders. Join us as we celebrate technology, ideas, and the
-            relentless pursuit of excellence.
+            NIRMAAN is a premier technical fest scheduled to take place from April 4th, 2024 to April 6th, 2024 at Poornima University, Jaipur. Our event will feature a diverse range of activities, including eSports tournaments,36 Hours hackathon, and technology showcases, attracting a broad audience of tech enthusiasts, innovators, and industry professionals from across the region. Our goal is to provide a platform for students to showcase their skills, connect with industry leaders, and gain valuable insights into the latest trends in technology. We are committed to fostering a spirit of innovation and collaboration, and we look forward to welcoming you to our event.
           </p>
         </div>
       </div>
