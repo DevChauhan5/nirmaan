@@ -7,28 +7,49 @@ import { Button } from "../ui/button";
 import { RxCross2 } from "react-icons/rx";
 import NavItems from "@/components/other/NavItems";
 import { Separator } from "@/components/ui/separator";
+import { useGSAP } from "@gsap/react";
+import gsap from "gsap";
 
 const Navbar = () => {
   const [isSidebarOpen, setIsSidebarOpen] = useState(false);
-
   const toggleSidebar = () => {
     setIsSidebarOpen(!isSidebarOpen);
   };
+  useGSAP(() => {
+    gsap.to("#main-txt, .items", {
+      opacity: 1,
+      delay: 0.5,
+      scrub: 1,
+      ease: "power2.inOut",
+    });
+    gsap.to("#nav-box", {
+      boxShadow: `0px 0px 10px yellow`,
+      delay: 0.5,
+      ease:'power2.inOut',
+    });
+  }, []);
   return (
-    <nav className="z-40 absolute bg-background shadow-md shadow-primary flex items-center justify-between py-4 tracking-wide w-full px-4 lg:px-12">
+    <nav
+      id="nav-box"
+      className="z-40 absolute bg-background shadow-primary flex items-center justify-between py-2 tracking-wide w-full px-4 lg:px-12"
+    >
       <div className="flex items-center justify-center">
-        <Link href={"/"} className="text-3xl lg:text-3xl font-extrabold bg-clip-text text-transparent bg-[linear-gradient(to_right,theme(colors.yellow.400),theme(colors.yellow.300),theme(colors.orange.200),theme(colors.yellow.300),theme(colors.yellow.400))] bg-[length:200%_auto] animate-gradient">
+        <Link
+          id="main-txt"
+          href={"/"}
+          className="opacity-0 text-3xl lg:text-3xl font-extrabold bg-clip-text text-transparent bg-[linear-gradient(to_right,theme(colors.yellow.400),theme(colors.yellow.300),theme(colors.orange.200),theme(colors.yellow.300),theme(colors.yellow.400))] bg-[length:200%_auto] animate-gradient"
+        >
           NIRMAAN&apos;24
         </Link>
       </div>
 
       {/* for Desktop view */}
-      <div className="hidden lg:flex items-center justify-center gap-6 text-2xl">
+      <div className="items opacity-0 hidden lg:flex items-center justify-center gap-6 text-2xl">
         <NavItems />
         <Separator orientation="vertical" />
         <Link
           className="ml-4 hover:text-yellow-400 transition-colors ease-in-out delay-100 duration-150"
-          href={"/"}
+          href={"https://forms.gle/d4FyyGoQ7oRrAn3z7"}
         >
           <Button className="p-6 text-xl" variant={"outline"}>
             Register
@@ -38,7 +59,7 @@ const Navbar = () => {
 
       {/* for Mobile view */}
       <div
-        className="lg:hidden cursor-pointer p-2 hover:bg-slate-800 rounded-full"
+        className="lg:hidden cursor-pointer p-2 hover:bg-slate-800 rounded-full items opacity-0"
         onClick={toggleSidebar}
       >
         <RiMenu4Fill className="w-8 h-8" />
@@ -46,7 +67,7 @@ const Navbar = () => {
 
       {/* Sidebar */}
       {isSidebarOpen && (
-        <div className="fixed inset-0 bg-background text-white z-50">
+        <div className="fixed inset-0 backdrop-blur-xl text-white z-50">
           <div className="flex flex-col items-end justify-between h-full py-8 px-6">
             <div
               className="self-end cursor-pointer p-2 hover:bg-slate-800 rounded-full"
@@ -56,20 +77,23 @@ const Navbar = () => {
             </div>
 
             <div className="flex flex-col items-end justify-center gap-8">
-              <Link className="sidebar-text" href={"/"}>
+              <Link className="sidebar-text gradient-text" href={"/"}>
                 <div onClick={toggleSidebar}>Home</div>
               </Link>
-              <Link className="sidebar-text" href={"#about"}>
-                <div onClick={toggleSidebar}>AboutUs</div>
+              <Link className="sidebar-text gradient-text" href={"#about"}>
+                <div onClick={toggleSidebar}>About Us</div>
               </Link>
-              <Link className="sidebar-text" href={"#hackathon"}>
+              <Link className="sidebar-text gradient-text" href={"#hackathon"}>
                 <div onClick={toggleSidebar}>Hackathon</div>
               </Link>
-              <Link className="sidebar-text" href={"#themes"}>
+              <Link className="sidebar-text gradient-text" href={"#themes"}>
                 <div onClick={toggleSidebar}>Themes</div>
               </Link>
-              <Link className="sidebar-text" href={"/"}>
-                <div onClick={toggleSidebar}>Register Now ↗️</div>
+              <Link
+                className="sidebar-text gradient-text"
+                href={"https://forms.gle/d4FyyGoQ7oRrAn3z7"}
+              >
+                <div onClick={toggleSidebar}>Register Now ↗</div>
               </Link>
             </div>
 

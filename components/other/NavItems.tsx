@@ -35,7 +35,7 @@ const components: { title: string; href: string; description: string }[] = [
   },
   {
     title: "Register ↗️",
-    href: "/",
+    href: "https://forms.gle/d4FyyGoQ7oRrAn3z7",
     description: "Register for Nirmaan'24 now.",
   },
 ];

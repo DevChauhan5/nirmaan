@@ -1,48 +1,17 @@
+'use client';
+
 import React from "react";
 import Image from "next/image";
 import { FaLinkedin } from "react-icons/fa";
 import Link from "next/link";
 import { Badge } from "@/components/ui/badge";
-import Marquee from "react-fast-marquee";
-
-const teamMembers = [
-  {
-    name: "Dharampal Singh",
-    photo: "/images/demo.jpeg",
-    role: "Lead Organizer",
-    linkedin: "https://www.linkedin.com/",
-  },
-  {
-    name: "Divyanshu Upadhyay",
-    photo: "/images/demo.jpeg",
-    role: "Lead Organizer",
-    linkedin: "https://www.linkedin.com/",
-  },
-  {
-    name: "Aman Krishna",
-    photo: "/images/demo.jpeg",
-    role: "Lead Member",
-    linkedin: "https://www.linkedin.com/",
-  },
-  {
-    name: "Manu Sharma",
-    photo: "/images/demo.jpeg",
-    role: "Lead Member",
-    linkedin: "https://www.linkedin.com/",
-  },
-  {
-    name: "Nisha",
-    photo: "/images/demo.jpeg",
-    role: "Lead Member",
-    linkedin: "https://www.linkedin.com/in/",
-  },
-  {
-    name: "Shreyansh Jain",
-    photo: "/images/demo.jpeg",
-    role: "Lead Member",
-    linkedin: "https://www.linkedin.com/",
-  },
-];
+import { teamMembers } from "@/constants";
+import Autoplay from "embla-carousel-autoplay"
+import {
+  Carousel,
+  CarouselContent,
+  CarouselItem,
+} from "@/components/ui/carousel";
 
 const OurTeam = () => {
   return (
@@ -51,14 +20,25 @@ const OurTeam = () => {
       className="px-4 md:px-8 py-16"
     >
       <h1 className="heading gradient-text mb-8">Meet Our Team</h1>
-
-      <Marquee pauseOnHover className="rounded-xl  w-full">
-        {teamMembers.map((member) => (
+      <Carousel
+        opts={{
+          align: "start",
+        }}
+        className="w-full mt-6"
+        plugins={[
+          Autoplay({
+            delay: 2000,
+          }),
+        ]}
+      >
+        <CarouselContent>
+            {teamMembers.map((member, index) => (
+            <CarouselItem key={index} className="md:basis-1/2 lg:basis-1/3">
           <div
             key={member.name}
             className="group border flex flex-col items-center justify-center rounded-md p-2 m-4"
           >
-            <div className="relative overflow-hidden h-64 ">
+            <div className="relative overflow-hidden h-64">
               <Image
                 src={member.photo}
                 alt={`${member.name} - ${member.role}`}
@@ -87,8 +67,10 @@ const OurTeam = () => {
               </Link>
             </div>
           </div>
+          </CarouselItem>
         ))}
-      </Marquee>
+        </CarouselContent>
+      </Carousel>
     </section>
   );
 };

@@ -11,58 +11,52 @@ import {
   CarouselContent,
   CarouselItem,
 } from "@/components/ui/carousel";
+import { themes } from "@/constants";
+import { useGSAP } from "@gsap/react";
 import Autoplay from "embla-carousel-autoplay"
+import gsap from "gsap";
+import { ScrollTrigger } from "gsap/all";
+import Image from "next/image";
+import { useRef } from "react";
 
 
-
-const themes = [
-  {
-    title: "AI & Machine Learning",
-    description: "Innovative solutions utilizing AI & ML techniques for predictive analytics, NLP, computer vision, and more."
-  },
-  {
-    title: "Cloud Computing",
-    description: "Applications leveraging cloud storage, serverless computing, containerization, and cloud-based machine learning models."
-  },
-  {
-    title: "Cybersecurity",
-    description: "Develop tools for threat detection, encryption, secure communication, and vulnerability assessment !"
-  },
-  {
-    title: "Web3 & Blockchain",
-    description: "Exploring decentralized web (Web3) and blockchain technologies for DApps, smart contracts, cryptocurrencies, and DeFi platforms."
-  },
-  {
-    title: "Internet of Things (IoT)",
-    description: "Innovative solutions for smart home devices, industrial applications, environmental monitoring, and wearable health trackers."
-  },
-  {
-    title: "AR & VR",
-    description: "Creating immersive experiences for gaming, education, virtual meetings, and industry training using AR and VR technologies."
-  },
-  {
-    title: "Data Science & Analytics",
-    description: "Projects focusing on data analysis, visualization, big data processing, and predictive modeling for data-driven decision-making."
-  },
-  {
-    title: "FinTech & Payments",
-    description: "Innovations in financial technology including mobile payments, peer-to-peer lending, blockchain remittances, and digital wallets."
-  },
-  {
-    title: "HealthTech",
-    description: "Developing tech solutions to enhance healthcare delivery, patient monitoring, diagnostics, and wellness management."
-  },
-  {
-    title: "Open Innovations",
-    description: "Encouraging interdisciplinary collaboration and creativity with freedom to explore any innovative idea or problem-solving approach."
-  }
-];
-
+gsap.registerPlugin(ScrollTrigger);
 
 const HackathonThemes = () => {
+  const sectionRef = useRef<HTMLDivElement | null>(null);
+
+  useGSAP(() => {
+    if (sectionRef.current) {
+      const cards = sectionRef.current.querySelectorAll('.card');
+
+      cards.forEach((card, index) => {
+        gsap.from(card, {
+          opacity: 0,
+          y: 50,
+          scrollTrigger: {
+            trigger: sectionRef.current,
+            start: 'top 80%',
+            toggleActions: 'play none none reverse',
+          },
+          duration: 1,
+          delay: index * 0.2,
+        });
+      });
+    }
+    gsap.from('#themes-head', {
+      opacity: 0,
+      y: 50,
+      scrollTrigger: {
+        trigger: sectionRef.current,
+        start: 'top 80%',
+        toggleActions: 'play none none reverse',
+      },
+      duration: 1,
+    })
+  }, []);
   return (
     <section id="themes" className="h-fit py-12  px-4 lg:px-8">
-      <h1 className="heading font-bold my-4 gradient-text">
+      <h1 id="themes-head" className="heading font-bold my-4 gradient-text">
         Themes for Hackathon
       </h1>
       <Carousel
@@ -76,16 +70,18 @@ const HackathonThemes = () => {
           }),
         ]}
       >
-        <CarouselContent>
+        <CarouselContent ref={sectionRef}>
           {themes.map((theme, index) => (
             <CarouselItem key={index} className="md:basis-1/2 lg:basis-1/3">
               <div className="p-1">
-                <Card className="max-h-[500px]">
+                <Card className="card max-h-[500px]">
                   <CardContent className="flex flex-col aspect-square items-start justify-center p-4">
-                    <img
-                      className="rounded-md "
-                      src="https://source.unsplash.com/400x400/?nature"
+                    <Image
+                      className="rounded-md bg-white shadow-md"
+                      src={theme.src}
                       alt="nature"
+                      height={400}
+                      width={400}
                     />
                     <CardTitle className="mt-4 tracking-wide">{theme.title}</CardTitle>
                     <CardDescription className="my-2">

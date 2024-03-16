@@ -24,8 +24,8 @@ export default function Home() {
       <Hackathon />
       <Separator />
       <HackathonThemes />
-      <Separator />
-      <Timeline />
+      {/* <Separator />
+      <Timeline /> */}
       <Separator />
       <OurTeam />
       <Separator />
