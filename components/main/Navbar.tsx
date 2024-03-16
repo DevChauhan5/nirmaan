@@ -9,6 +9,7 @@ import NavItems from "@/components/other/NavItems";
 import { Separator } from "@/components/ui/separator";
 import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
+import { cn } from "@/lib/utils";
 
 const Navbar = () => {
   const [isSidebarOpen, setIsSidebarOpen] = useState(false);
@@ -31,7 +32,11 @@ const Navbar = () => {
   return (
     <nav
       id="nav-box"
-      className="z-40 absolute bg-background shadow-primary flex items-center justify-between py-2 tracking-wide w-full px-4 lg:px-12"
+      className={cn({
+      "z-40 absolute shadow-primary flex items-center justify-between py-2 tracking-wide w-full px-4 lg:px-12": true,
+      "bg-transparent": isSidebarOpen,
+      "backdrop-blur-2xl": !isSidebarOpen,
+    })}
     >
       <div className="flex items-center justify-center">
         <Link
@@ -67,7 +72,7 @@ const Navbar = () => {
 
       {/* Sidebar */}
       {isSidebarOpen && (
-        <div className="fixed inset-0 backdrop-blur-xl text-white z-50">
+        <div className="fixed inset-0 bg-blur z-99">
           <div className="flex flex-col items-end justify-between h-full py-8 px-6">
             <div
               className="self-end cursor-pointer p-2 hover:bg-slate-800 rounded-full"

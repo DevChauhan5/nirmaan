@@ -1,11 +1,12 @@
-"use client"
+"use client";
 
-import React, { useRef } from 'react';
+import React, { useRef } from "react";
 import { Button } from "../ui/button";
 import { useRouter } from "next/navigation";
-import { gsap } from 'gsap';
-import { ScrollTrigger } from 'gsap/all';
-import { useGSAP } from '@gsap/react';
+import { gsap } from "gsap";
+import { ScrollTrigger } from "gsap/all";
+import { useGSAP } from "@gsap/react";
+import Image from "next/image";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -14,20 +15,20 @@ const Hackathon = () => {
   const sectionRef = useRef<HTMLDivElement | null>(null);
 
   useGSAP(() => {
-      if (sectionRef.current) {
-        const section = sectionRef.current;
+    if (sectionRef.current) {
+      const section = sectionRef.current;
 
-        gsap.from(section, {
-          opacity: 0,
-          y: 50,
-          scrollTrigger: {
-            trigger: section,
-            start: 'top center',
-            toggleActions: 'play none none reverse',
-          },
-          duration: 1,
-        });
-      }
+      gsap.from(section, {
+        opacity: 0,
+        y: 50,
+        scrollTrigger: {
+          trigger: section,
+          start: "top center",
+          toggleActions: "play none none reverse",
+        },
+        duration: 1,
+      });
+    }
   }, []);
 
   return (
@@ -38,30 +39,43 @@ const Hackathon = () => {
     >
       {/* Image */}
       <div className="w-full md:w-1/3">
-        <img
-          src="https://techcommunity.microsoft.com/t5/image/serverpage/image-id/366577i4F851B60F8347ED4/image-size/original?v=v2&px=-1"
+        <Image
+          src={"/images/hackathon.webp"}
           alt="Hackathon"
-          className="w-full h-auto"
+          className="w-full h-auto border"
+          width={500}
+          height={500}
         />
       </div>
 
       {/* Content */}
       <div className="w-full md:w-2/3 pl-0 md:pl-4">
-        <h2 className="heading font-bold mb-4 gradient-text mt-6 md:mt-0">Hackathon</h2>
-        <p className="text-lg text-gray-500 mb-4">
+        <h2 className="heading font-bold mb-4 gradient-text mt-6 md:mt-0">
+          Hackathon
+        </h2>
+        <p className="text-lg text-gray-500 mb-6">
           The Hackathon at Nirmaan is your chance to showcase your coding
           skills, creativity, and teamwork. Dive into a world of innovation,
-          where you&apos;ll collaborate, ideate, and develop solutions to real-world
-          challenges. Join us in this exhilarating journey and unleash your
-          potential.
+          where you&apos;ll collaborate, ideate, and develop solutions to
+          real-world challenges. Join us in this exhilarating journey and
+          unleash your potential.
         </p>
 
         {/* Buttons */}
-        <div className="flex flex-col md:flex-row gap-4 ">
-            <Button  onClick={()=>router.push('/')} className="text-lg" variant={"outline"}>
-              👁 View Details
-            </Button>
-            <Button onClick={()=>router.push('https://forms.gle/d4FyyGoQ7oRrAn3z7')} className="text-lg">Register</Button>
+        <div className="flex flex-col md:flex-row gap-4 mt-4">
+          <Button
+            onClick={() => router.push("/")}
+            className="text-lg"
+            variant={"outline"}
+          >
+            👁 View Details
+          </Button>
+          <Button
+            onClick={() => router.push("https://forms.gle/d4FyyGoQ7oRrAn3z7")}
+            className="text-lg"
+          >
+            Register
+          </Button>
         </div>
       </div>
     </section>

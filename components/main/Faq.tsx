@@ -4,45 +4,7 @@ import {
   AccordionItem,
   AccordionTrigger,
 } from "@/components/ui/accordion"
-
-const faq = [
-  {
-    question: "What is the event about?",
-    answer: "NIRMAAN is a vibrant celebration of technology, innovation, and creativity."
-  },
-  {
-    question: "When and where will the event take place?",
-    answer: "NIRMAAN will be held from March 4th to 6th at Poornima University."
-  },
-  {
-    question: "Can I participate as an individual or as a team?",
-    answer: "Both individual and team participation is encouraged. Events will specify whether they are solo or team-based."
-  },
-  {
-    question: "Is there a registration fee?",
-    answer: "Yes, there is a registration fee of Rs. 500 only."
-  },
-  {
-    question: "Can I attend even if I'm not participating in any events?",
-    answer: "Absolutely! NIRMAAN welcomes all tech enthusiasts to join as spectators, explore showcases, and enjoy the tech-inspired atmosphere. Registration is a must."
-  },
-  {
-    question: "Can I participate in multiple events?",
-    answer: "Yes, participants are encouraged to explore various events throughout the day. Make sure to check the schedule for overlapping timings."
-  },
-  {
-    question: "Can I bring my own equipment for certain events?",
-    answer: "For some events, participants may be required to bring their own laptops, devices, or specific tools. Check event descriptions for equipment details."
-  },
-  {
-    question: "Will there be accommodations available for hackathon participants?",
-    answer: "Yes, we are committed to providing a welcoming and accessible accommodation. Contact us in advance to discuss specific accommodations or requirements."
-  },
-  {
-    question: "Can I transfer my registration to another person if I can't attend?",
-    answer: "No, registration transfers may not be possible. Contact our registration team through the provided email or at the helpdesk through the app for further assistance."
-  }
-];
+import { faq } from "@/constants"
 
 
 const Faq = () => {

@@ -65,4 +65,7 @@
   .heading {
     @apply text-3xl md:text-5xl text-start
   }
+  .bg-blur{
+    @apply backdrop-blur-2xl
+  }
 }
