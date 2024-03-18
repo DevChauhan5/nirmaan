@@ -11,19 +11,18 @@ import Link from "next/link";
 
 gsap.registerPlugin(ScrollTrigger);
 
-const ESports1 = () => {
-  const router = useRouter();
-  const esports = useRef<HTMLDivElement | null>(null);
+const ESports2 = () => {
+  const esports2 = useRef<HTMLDivElement | null>(null);
 
   useGSAP(() => {
-    if (esports.current) {
-      const section = esports.current;
+    if (esports2.current) {
+      const section2 = esports2.current;
 
-      gsap.from(section, {
+      gsap.from(section2, {
         opacity: 0,
         y: 50,
         scrollTrigger: {
-          trigger: section,
+          trigger: section2,
           start: "top center",
           toggleActions: "play none none reverse",
         },
@@ -34,14 +33,14 @@ const ESports1 = () => {
 
   return (
     <section
-      ref={esports}
-      id="esports"
-      className="h-fit flex flex-col md:flex-row-reverse items-center justify-center py-12 px-4 lg:px-8"
+      ref={esports2}
+      id="esports2"
+      className="h-fit flex flex-col md:flex-row items-center justify-center py-12 px-4 lg:px-8"
     >
       {/* Image */}
       <div className="w-full md:w-1/3">
         <Image
-          src={"/images/bgmi.webp"}
+          src={"/images/cod.webp"}
           alt="Hackathon"
           className="w-full h-auto border"
           width={500}
@@ -52,16 +51,16 @@ const ESports1 = () => {
       {/* Content */}
       <div className="w-full md:w-2/3 pl-0 md:pl-4">
         <h2 className="heading font-bold mb-4 gradient-text mt-6 md:mt-0">
-          BGMI
+          COD
         </h2>
         <p className="text-lg text-gray-500 mb-6">
-        Experience the adrenaline-fueled action of BattleGrounds Mobile India (BGMI)! Engage in intense battles, strategic maneuvers, and squad-based warfare as you fight for victory in this mobile gaming sensation.
+        Enter the immersive universe of Call of Duty (COD)! From heart-pounding campaigns to exhilarating multiplayer matches, COD delivers cutting-edge graphics and intense gameplay. Join the battle and prove your skills today!
         </p>
 
         {/* Buttons */}
         <div className="flex flex-col md:flex-row gap-4 mt-4">
           <Button className="text-lg" asChild>
-            <Link href="https://forms.gle/Zt2qVM4rvezhFK9b8" target="_blank">
+            <Link href="https://docs.google.com/forms/d/1NeERWF8Vr_x0PbrOpptRGqyIMOdUbLKrj9VRcoRn7fA/edit?usp=drivesdk" target="_blank">
               Register Now! 🚀
             </Link>
           </Button>
@@ -80,4 +79,4 @@ const ESports1 = () => {
   );
 };
 
-export default ESports1;
+export default ESports2;

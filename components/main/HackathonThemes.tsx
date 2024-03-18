@@ -76,10 +76,10 @@ const HackathonThemes = () => {
           {themes.map((theme, index) => (
             <CarouselItem key={index} className="md:basis-1/2 lg:basis-1/3">
               <div className="p-1">
-                <Card className="card max-h-[500px] flex flex-col items-center justify-center p-2">
-                  <CardContent className="flex flex-col aspect-square items-start justify-center p-4">
+                <Card className="card max-h-[500px] min-h-[400px] md:min-h-[500px] flex flex-col items-center justify-center p-2">
+                  <CardContent className="flex object-cover flex-col aspect-square items-start justify-center p-4">
                     <Image
-                      className="rounded-md bg-white shadow-md"
+                      className="rounded-md bg-white shadow-md "
                       src={theme.src}
                       alt="nature"
                       height={400}
