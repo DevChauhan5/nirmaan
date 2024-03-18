@@ -10,6 +10,8 @@ import {
   Carousel,
   CarouselContent,
   CarouselItem,
+  CarouselNext,
+  CarouselPrevious,
 } from "@/components/ui/carousel";
 import { themes } from "@/constants";
 import { useGSAP } from "@gsap/react";
@@ -63,7 +65,7 @@ const HackathonThemes = () => {
         opts={{
           align: "start",
         }}
-        className="w-full mt-6"
+        className="w-full mt-6 px-6"
         plugins={[
           Autoplay({
             delay: 2000,
@@ -93,6 +95,8 @@ const HackathonThemes = () => {
             </CarouselItem>
           ))}
         </CarouselContent>
+        <CarouselPrevious className="mx-9"/>
+      <CarouselNext  className="mx-9"/>
       </Carousel>
     </section>
   );

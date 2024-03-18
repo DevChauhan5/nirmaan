@@ -8,3 +8,4 @@ export { default as OurTeam } from './OurTeam';
 export { default as Timeline } from './Timeline';
 export { default as Footer } from './Footer';
 export { default as HackathonThemes } from './HackathonThemes';
+export { default as ESports } from './ESports';

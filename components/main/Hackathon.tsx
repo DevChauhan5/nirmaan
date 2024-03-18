@@ -7,6 +7,7 @@ import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/all";
 import { useGSAP } from "@gsap/react";
 import Image from "next/image";
+import Link from "next/link";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -63,18 +64,15 @@ const Hackathon = () => {
 
         {/* Buttons */}
         <div className="flex flex-col md:flex-row gap-4 mt-4">
-          <Button
-            onClick={() => router.push("/")}
-            className="text-lg"
-            variant={"outline"}
-          >
-            👁 View Details
+          <Button className="text-lg" variant={"outline"} asChild>
+            <Link href="https://drive.google.com/drive/folders/1TUH-atr7IzrqDC6SEpXt-oexAxw1Ydvu" target="_blank">
+              👁 View Details
+            </Link>
           </Button>
-          <Button
-            onClick={() => router.push("https://forms.gle/d4FyyGoQ7oRrAn3z7")}
-            className="text-lg"
-          >
-            Register
+          <Button onClick={() => router.push("")} className="text-lg" asChild>
+            <Link href="https://forms.gle/d4FyyGoQ7oRrAn3z7" target="_blank">
+              Register Now! 🚀
+            </Link>
           </Button>
         </div>
       </div>

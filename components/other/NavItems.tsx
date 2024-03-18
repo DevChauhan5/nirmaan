@@ -13,32 +13,9 @@ import {
   NavigationMenuTrigger,
   navigationMenuTriggerStyle,
 } from "@/components/ui/navigation-menu";
+import { components } from "@/constants";
 
-const components: { title: string; href: string; description: string }[] = [
-  {
-    title: "Hackathon",
-    href: "/#hackathon",
-    description:
-      "MAIN EVENT: A 36-hour hackathon where you can build anything you want.",
-  },
-  {
-    title: "Themes",
-    href: "/#themes",
-    description:
-      "Choose from a variety of themes and build projects based on them.",
-  },
-  {
-    title: "Our Team",
-    href: "#our-team",
-    description:
-      "Nirmaan'24 is organized by a team of passionate students from Poornima University.",
-  },
-  {
-    title: "Register ↗️",
-    href: "https://forms.gle/d4FyyGoQ7oRrAn3z7",
-    description: "Register for Nirmaan'24 now.",
-  },
-];
+
 
 export default function NavigationMenuDemo() {
   return (
@@ -53,9 +30,6 @@ export default function NavigationMenuDemo() {
               </ListItem>
               <ListItem href="/#faq" title="FAQ">
                 Frequently Asked Questions
-              </ListItem>
-              <ListItem href="/#timeline" title="Timeline">
-                Nirmaan&apos;24 Timeline
               </ListItem>
             </ul>
           </NavigationMenuContent>

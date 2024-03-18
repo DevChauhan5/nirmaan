@@ -11,6 +11,8 @@ import {
   Carousel,
   CarouselContent,
   CarouselItem,
+  CarouselNext,
+  CarouselPrevious,
 } from "@/components/ui/carousel";
 import { Separator } from "../ui/separator";
 
@@ -22,7 +24,7 @@ const OurTeam = () => {
         opts={{
           align: "start",
         }}
-        className="w-full mt-6"
+        className="w-full mt-6 px-5"
         plugins={[
           Autoplay({
             delay: 2000,
@@ -46,31 +48,33 @@ const OurTeam = () => {
                   />
                 </div>
                 <div className="mt-4 text-center flex flex-col items-center justify-center">
-                  <h3 className="text-2xl font-bold text-gray-400 hover:text-primary">
+                  <h3 className="text-2xl font-bold text-gray-400 hover:text-primary tracking-wide">
                     {member.name}
                   </h3>
-                  {member.role === "Lead Organizer" ? (
-                    <Badge>{member.role}</Badge>
+                  {member.role === "Chair - Students' Council" ? (
+                    <Badge className="tracking-wide">{member.role}</Badge>
                   ) : (
-                    <Badge variant={"secondary"}>{member.role}</Badge>
+                    <Badge variant={"secondary"} className="tracking-wide">{member.role}</Badge>
                   )}
 
-                  {/* <Link
+                  <Link
                 href={member.linkedin}
                 target="_blank"
                 className="inline-flex gap-2 text-md items-center my-2 text-gray-700 hover:text-blue-600"
               >
                 <FaLinkedin className="" />
                 LinkedIn
-              </Link> */}
+              </Link>
                 </div>
               </div>
             </CarouselItem>
           ))}
         </CarouselContent>
+        <CarouselPrevious className="flex md:hidden mx-9"/>
+      <CarouselNext  className="flex md:hidden mx-9"/>
       </Carousel>
-      <Separator className="my-4 bg-primary"/>
-      <Carousel
+      {/* <Separator className="my-4 bg-primary" /> */}
+      {/*  <Carousel
         opts={{
           align: "start",
         }}
@@ -114,19 +118,19 @@ const OurTeam = () => {
               >
                 <FaLinkedin className="" />
                 LinkedIn
-              </Link> */}
+              </Link> 
                 </div>
               </div>
             </CarouselItem>
           ))}
         </CarouselContent>
-      </Carousel>
-      <Separator className="my-4 bg-primary"/>
+      </Carousel>*/}
+      <Separator className="my-4 bg-primary" />
       <Carousel
         opts={{
           align: "start",
         }}
-        className="w-full mt-6"
+        className="w-full mt-6 px-5"
         plugins={[
           Autoplay({
             delay: 2000,
@@ -159,19 +163,21 @@ const OurTeam = () => {
                     <Badge variant={"secondary"}>{member.role}</Badge>
                   )}
 
-                  {/* <Link
+                  <Link
                 href={member.linkedin}
                 target="_blank"
                 className="inline-flex gap-2 text-md items-center my-2 text-gray-700 hover:text-blue-600"
               >
                 <FaLinkedin className="" />
                 LinkedIn
-              </Link> */}
+              </Link>
                 </div>
               </div>
             </CarouselItem>
           ))}
-        </CarouselContent>
+          </CarouselContent>
+        <CarouselPrevious className="mx-9"/>
+      <CarouselNext  className="mx-9"/>
       </Carousel>
     </section>
   );

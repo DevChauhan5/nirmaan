@@ -1,32 +1,14 @@
 import Link from "next/link";
-import { FaInstagram, FaLinkedin, FaYoutube } from "react-icons/fa";
-import { RiTwitterXFill } from "react-icons/ri";
 import { MdArrowOutward } from "react-icons/md";
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import { Separator } from "@/components/ui/separator";
-
-const socialLinks = [
-  {
-    name: "X",
-    icon: <RiTwitterXFill className="w-6 h-6" />,
-    url: "https://x.com",
-  },
-  {
-    name: "Instagram",
-    icon: <FaInstagram className="w-6 h-6" />,
-    url: "https://www.instagram.com/",
-  },
-  {
-    name: "LinkedIn",
-    icon: <FaLinkedin className="w-6 h-6" />,
-    url: "https://www.linkedin.com/",
-  },
-  {
-    name: "YouTube",
-    icon: <FaYoutube className="w-6 h-6" />,
-    url: "https://www.youtube.com/",
-  },
-];
+import Image from "next/image";
+import {
+  Tooltip,
+  TooltipContent,
+  TooltipProvider,
+  TooltipTrigger,
+} from "@/components/ui/tooltip";
 
 const Footer = () => {
   return (
@@ -34,7 +16,13 @@ const Footer = () => {
       <div className="container mx-auto px-4 lg:px-8 flex flex-col lg:flex-row items-start lg:items-center justify-between gap-4 mb-4">
         {/* First Section */}
         <section className="w-full h-fit lg:w-1/3 flex flex-col lg:border-r lg:px-2 items-start justify-between space-y-4">
-          <h2 className="text-3xl font-bold">JoinUs @ Nirmaan&apos;24 🎯</h2>
+          <h2 className="text-3xl font-bold">
+            JoinUs @{" "}
+            <span className="font-extrabold bg-clip-text text-transparent bg-[linear-gradient(to_right,theme(colors.yellow.400),theme(colors.yellow.300),theme(colors.orange.200),theme(colors.yellow.300),theme(colors.yellow.400))] bg-[length:200%_auto] animate-gradient">
+              Nirmaan&apos;24
+            </span>
+            🎯
+          </h2>
           <p className="text-md text-gray-400">
             Inspire innovation with us as we pave the way for the creators and
             thinkers of tomorrow.
@@ -97,19 +85,30 @@ const Footer = () => {
 
         {/* Third Section */}
         <section className="w-full h-fit lg:w-1/3 mt-8 lg:mt-0 flex flex-col items-start lg:items-center  justify-between">
-          <h2 className="text-3xl font-bold">Follow Us & Stay Informed 🌐</h2>
-          <div className="flex lg:flex-col mt-8 gap-4 lg:gap-5 ">
-            {socialLinks.map((link) => (
-              <Link
-                key={link.name}
-                href={link.url}
-                target="_blank"
-                className="inline-block text-2xl mr-4 hover:text-yellow-400 transition duration-300"
-              >
-                {link.icon}
-              </Link>
-            ))}
-          </div>
+          <h2 className="text-3xl font-bold">Find Us 📍🗺️</h2>
+          <TooltipProvider>
+            <Tooltip>
+              <TooltipTrigger>
+                <div className="flex lg:flex-col mt-8">
+                  <Link
+                    target="_blank"
+                    href="https://maps.app.goo.gl/1LgKCwh2ggDLvkWS6"
+                  >
+                    <Image
+                      src="/images/map.webp"
+                      alt="Click to view map"
+                      className="border border-primary rounded-xl lg:w-[300px]"
+                      width={400}
+                      height={400}
+                    />
+                  </Link>
+                </div>
+              </TooltipTrigger>
+              <TooltipContent>
+                <p>Click to Open Maps</p>
+              </TooltipContent>
+            </Tooltip>
+          </TooltipProvider>
         </section>
       </div>
       <Separator />

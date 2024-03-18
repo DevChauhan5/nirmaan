@@ -9,6 +9,7 @@ import {
   OurSponsors,
   OurTeam,
   Timeline,
+  ESports,
 } from "@/components/main";
 import Credit from "@/components/other/Credit";
 import { Separator } from "@/components/ui/separator";
@@ -22,6 +23,8 @@ export default function Home() {
       <About />
       <Separator />
       <Hackathon />
+      <Separator />
+      <ESports />
       <Separator />
       <HackathonThemes />
       {/* <Separator />
