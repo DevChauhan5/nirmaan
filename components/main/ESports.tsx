@@ -12,12 +12,11 @@ import Link from "next/link";
 gsap.registerPlugin(ScrollTrigger);
 
 const ESports1 = () => {
-  const router = useRouter();
-  const esports = useRef<HTMLDivElement | null>(null);
+  const esports1 = useRef<HTMLDivElement | null>(null);
 
   useGSAP(() => {
-    if (esports.current) {
-      const section = esports.current;
+    if (esports1.current) {
+      const section = esports1.current;
 
       gsap.from(section, {
         opacity: 0,
@@ -34,7 +33,7 @@ const ESports1 = () => {
 
   return (
     <section
-      ref={esports}
+      ref={esports1}
       id="esports"
       className="h-fit flex flex-col md:flex-row-reverse items-center justify-center py-12 px-4 lg:px-8"
     >

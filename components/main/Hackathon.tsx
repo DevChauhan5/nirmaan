@@ -13,11 +13,11 @@ gsap.registerPlugin(ScrollTrigger);
 
 const Hackathon = () => {
   const router = useRouter();
-  const sectionRef = useRef<HTMLDivElement | null>(null);
+  const hackathonRef = useRef<HTMLDivElement | null>(null);
 
   useGSAP(() => {
-    if (sectionRef.current) {
-      const section = sectionRef.current;
+    if (hackathonRef.current) {
+      const section = hackathonRef.current;
 
       gsap.from(section, {
         opacity: 0,
@@ -34,7 +34,7 @@ const Hackathon = () => {
 
   return (
     <section
-      ref={sectionRef}
+      ref={hackathonRef}
       id="hackathon"
       className="h-fit flex flex-col md:flex-row items-center justify-center py-12 px-4 lg:px-8"
     >
@@ -69,7 +69,7 @@ const Hackathon = () => {
               👁 View Details
             </Link>
           </Button>
-          <Button onClick={() => router.push("")} className="text-lg" asChild>
+          <Button className="text-lg" asChild>
             <Link href="https://forms.gle/d4FyyGoQ7oRrAn3z7" target="_blank">
               Register Now! 🚀
             </Link>
