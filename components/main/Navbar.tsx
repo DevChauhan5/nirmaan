@@ -20,7 +20,6 @@ const Navbar = () => {
     gsap.to("#main-txt, .items", {
       opacity: 1,
       delay: 0.5,
-      scrub: 1,
       ease: "power2.inOut",
     });
     gsap.to("#nav-box", {
@@ -90,6 +89,9 @@ const Navbar = () => {
               </Link>
               <Link className="sidebar-text gradient-text" href={"#hackathon"}>
                 <div onClick={toggleSidebar}>Hackathon</div>
+              </Link>
+              <Link className="sidebar-text gradient-text" href={"#esports"}>
+                <div onClick={toggleSidebar}>E-Sports</div>
               </Link>
               <Link className="sidebar-text gradient-text" href={"#themes"}>
                 <div onClick={toggleSidebar}>Themes</div>

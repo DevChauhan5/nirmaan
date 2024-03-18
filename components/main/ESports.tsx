@@ -54,7 +54,7 @@ const ESports = () => {
         <h2 className="heading font-bold mb-4 gradient-text mt-6 md:mt-0">
           E-Sports
         </h2>
-        <p className="text-lg text-gray-500 mb-6">
+        <p className="text-lg text-gray-500 mb-6 cursor-default">
           Dive into the thrilling world of competitive gaming with our Esports
           section! Experience intense battles, strategic gameplay, and
           camaraderie as you compete against fellow gamers in popular titles.

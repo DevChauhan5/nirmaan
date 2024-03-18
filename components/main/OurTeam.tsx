@@ -44,17 +44,17 @@ const OurTeam = () => {
                     alt={`${member.name} - ${member.role}`}
                     width={350}
                     height={350}
-                    className="filter grayscale group-hover:filter group-hover:grayscale-0  rounded-full transition duration-300"
+                    className="filter grayscale group-hover:filter group-hover:grayscale-0 w-auto h-auto rounded-full transition duration-300"
                   />
                 </div>
                 <div className="mt-4 text-center flex flex-col items-center justify-center">
-                  <h3 className="text-2xl font-bold text-gray-400 hover:text-primary tracking-wide">
+                  <h3 className="text-2xl cursor-default font-bold tracking-wide bg-clip-text hover:text-transparent bg-[linear-gradient(to_right,theme(colors.yellow.400),theme(colors.yellow.300),theme(colors.orange.200),theme(colors.yellow.300),theme(colors.yellow.400))] bg-[length:200%_auto] hover:animate-gradient">
                     {member.name}
                   </h3>
                   {member.role === "Chair - Students' Council" ? (
-                    <Badge className="tracking-wide">{member.role}</Badge>
+                    <Badge className="tracking-wide cursor-default">{member.role}</Badge>
                   ) : (
-                    <Badge variant={"secondary"} className="tracking-wide">{member.role}</Badge>
+                    <Badge variant={"secondary"} className="tracking-wide cursor-default">{member.role}</Badge>
                   )}
 
                   <Link
@@ -150,17 +150,17 @@ const OurTeam = () => {
                     alt={`${member.name} - ${member.role}`}
                     width={350}
                     height={350}
-                    className="filter grayscale group-hover:filter group-hover:grayscale-0  rounded-full transition duration-300"
+                    className="filter grayscale group-hover:filter group-hover:grayscale-0 w-auto h-auto rounded-full transition duration-300"
                   />
                 </div>
                 <div className="mt-4 text-center flex flex-col items-center justify-center">
-                  <h3 className="text-2xl font-bold text-gray-400 hover:text-primary">
+                  <h3 className="text-2xl cursor-default font-bold tracking-wide bg-clip-text hover:text-transparent bg-[linear-gradient(to_right,theme(colors.yellow.400),theme(colors.yellow.300),theme(colors.orange.200),theme(colors.yellow.300),theme(colors.yellow.400))] bg-[length:200%_auto] hover:animate-gradient">
                     {member.name}
                   </h3>
                   {member.role === "Lead Organizer" ? (
-                    <Badge>{member.role}</Badge>
+                    <Badge className="cursor-default">{member.role}</Badge>
                   ) : (
-                    <Badge variant={"secondary"}>{member.role}</Badge>
+                    <Badge variant={"secondary"} className="cursor-default">{member.role}</Badge>
                   )}
 
                   <Link

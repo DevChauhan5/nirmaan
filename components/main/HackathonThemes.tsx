@@ -76,7 +76,7 @@ const HackathonThemes = () => {
           {themes.map((theme, index) => (
             <CarouselItem key={index} className="md:basis-1/2 lg:basis-1/3">
               <div className="p-1">
-                <Card className="card max-h-[500px]">
+                <Card className="card max-h-[500px] flex flex-col items-center justify-center p-2">
                   <CardContent className="flex flex-col aspect-square items-start justify-center p-4">
                     <Image
                       className="rounded-md bg-white shadow-md"
@@ -85,8 +85,8 @@ const HackathonThemes = () => {
                       height={400}
                       width={400}
                     />
-                    <CardTitle className="mt-4 tracking-wide">{theme.title}</CardTitle>
-                    <CardDescription className="my-2">
+                    <CardTitle className="mt-4 cursor-default tracking-wide bg-clip-text hover:text-transparent bg-[linear-gradient(to_right,theme(colors.yellow.400),theme(colors.yellow.300),theme(colors.orange.200),theme(colors.yellow.300),theme(colors.yellow.400))] bg-[length:200%_auto] hover:animate-gradient">{theme.title}</CardTitle>
+                    <CardDescription className="my-2 cursor-default">
                       {theme.description}
                     </CardDescription>
                   </CardContent>

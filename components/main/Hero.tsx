@@ -9,11 +9,6 @@ import gsap from "gsap";
 
 const Hero = () => {
   useGSAP(() => {
-    gsap.to(".hero-text", {
-      opacity: 1,
-      delay: 0.5,
-      ease: "power2.inOut",
-    });
     gsap.fromTo(
       "#hero-text, #hero-desc",
       {

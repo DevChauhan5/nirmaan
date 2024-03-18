@@ -16,11 +16,14 @@ const Footer = () => {
       <div className="container mx-auto px-4 lg:px-8 flex flex-col lg:flex-row items-start lg:items-center justify-between gap-4 mb-4">
         {/* First Section */}
         <section className="w-full h-fit lg:w-1/3 flex flex-col lg:border-r lg:px-2 items-start justify-between space-y-4">
-          <h2 className="text-3xl font-bold">
+          <h2 className="text-3xl font-bold cursor-default">
             JoinUs @{" "}
-            <span className="font-extrabold bg-clip-text text-transparent bg-[linear-gradient(to_right,theme(colors.yellow.400),theme(colors.yellow.300),theme(colors.orange.200),theme(colors.yellow.300),theme(colors.yellow.400))] bg-[length:200%_auto] animate-gradient">
+            <Link
+              href={"/"}
+              className="font-extrabold bg-clip-text text-transparent bg-[linear-gradient(to_right,theme(colors.yellow.400),theme(colors.yellow.300),theme(colors.orange.200),theme(colors.yellow.300),theme(colors.yellow.400))] bg-[length:200%_auto] animate-gradient"
+            >
               Nirmaan&apos;24
-            </span>
+            </Link>
             🎯
           </h2>
           <p className="text-md text-gray-400">
@@ -28,7 +31,7 @@ const Footer = () => {
             thinkers of tomorrow.
           </p>
           <div className="flex flex-col items-start justify-center">
-            <p className="mt-4 flex gap-1 items-center justify-center text-xl font-bold">
+            <p className="mt-4 flex gap-1 items-center cursor-default justify-center text-xl font-bold">
               <Avatar>
                 <AvatarImage src="/images/logo-pu.jpeg" alt="pu" />
                 <AvatarFallback>PU</AvatarFallback>
@@ -50,7 +53,7 @@ const Footer = () => {
 
         {/* Second Section */}
         <section className="w-full h-fit lg:w-1/3 mt-8 lg:mt-0 space-y-3 flex flex-col items-start lg:items-center justify-between lg:border-r">
-          <h2 className="text-3xl font-bold">Quick Links 🚀</h2>
+          <h2 className="text-3xl font-bold cursor-default">Quick Links 🚀</h2>
           <Link
             href="/"
             className="text-lg text-gray-400 hover:text-yellow-400 transition duration-300"
@@ -70,10 +73,10 @@ const Footer = () => {
             Themes
           </Link>
           <Link
-            href="/#timeline"
+            href="/#esports"
             className="text-lg text-gray-400 hover:text-yellow-400 transition duration-300"
           >
-            Timeline
+            E-Sports
           </Link>
           <Link
             href="/#faq"

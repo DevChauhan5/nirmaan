@@ -54,7 +54,7 @@ const Hackathon = () => {
         <h2 className="heading font-bold mb-4 gradient-text mt-6 md:mt-0">
           Hackathon
         </h2>
-        <p className="text-lg text-gray-500 mb-6">
+        <p className="text-lg cursor-default text-gray-500 mb-6">
           The Hackathon at Nirmaan is your chance to showcase your coding
           skills, creativity, and teamwork. Dive into a world of innovation,
           where you&apos;ll collaborate, ideate, and develop solutions to

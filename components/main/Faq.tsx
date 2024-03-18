@@ -39,7 +39,7 @@ const Faq = () => {
       {faq.map((item, index) => (
         <AccordionItem key={index} value={`item-${index}`}>
         <AccordionTrigger className="text-2xl text-start">{item.question}</AccordionTrigger>
-        <AccordionContent className="text-lg text-gray-600">
+        <AccordionContent className="text-lg text-gray-400">
           {item.answer}
         </AccordionContent>
       </AccordionItem>

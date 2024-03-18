@@ -90,7 +90,8 @@ export const coreteam = [
     name: "Nisha",
     photo: "/images/profile/Nisha.webp",
     role: "Team Member",
-    linkedin: "https://www.linkedin.com/in/nisha-83b879290?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+    linkedin:
+      "https://www.linkedin.com/in/nisha-83b879290?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
   },
   {
     name: "Shreyansh Jain",
@@ -102,43 +103,50 @@ export const coreteam = [
     name: "Unnati",
     photo: "/images/profile/Unnati.webp",
     role: "Team Member",
-    linkedin: "https://www.linkedin.com/in/unnati-arora-a279772ba?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BJrAhpdbbSGOIMc13sPFz7A%3D%3D",
+    linkedin:
+      "https://www.linkedin.com/in/unnati-arora-a279772ba?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BJrAhpdbbSGOIMc13sPFz7A%3D%3D",
   },
   {
     name: "Daksha",
     photo: "/images/profile/Daksha.webp",
     role: "Team Member",
-    linkedin: "https://www.linkedin.com/in/daksha-soni-14052224b?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+    linkedin:
+      "https://www.linkedin.com/in/daksha-soni-14052224b?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
   },
   {
     name: "Karunesh",
     photo: "/images/profile/Karunesh.webp",
     role: "Team Member",
-    linkedin: "https://www.linkedin.com/in/karunesh-sharma-22973b272?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+    linkedin:
+      "https://www.linkedin.com/in/karunesh-sharma-22973b272?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
   },
   {
     name: "Lavisha",
     photo: "/images/profile/Lavisha.webp",
     role: "Team Member",
-    linkedin: "https://www.linkedin.com/in/lavisha-bhawnani-265015261?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+    linkedin:
+      "https://www.linkedin.com/in/lavisha-bhawnani-265015261?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
   },
   {
     name: "Navyanshi",
     photo: "/images/profile/Navyanshi.webp",
     role: "Team Member",
-    linkedin: "https://www.linkedin.com/in/navyanshi-joshi-35a47b23b?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+    linkedin:
+      "https://www.linkedin.com/in/navyanshi-joshi-35a47b23b?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
   },
   {
     name: "Rudraksh",
     photo: "/images/profile/Rudraksh.webp",
     role: "Team Member",
-    linkedin: "https://www.linkedin.com/in/rudraksh-sharma-7369892a5?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+    linkedin:
+      "https://www.linkedin.com/in/rudraksh-sharma-7369892a5?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
   },
   {
     name: "Surbhi",
     photo: "/images/profile/Surbhi.webp",
     role: "Team Member",
-    linkedin: "https://www.linkedin.com/in/surbhi-khatri-57245b286?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+    linkedin:
+      "https://www.linkedin.com/in/surbhi-khatri-57245b286?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
   },
   {
     name: "Twinkle",
@@ -150,25 +158,29 @@ export const coreteam = [
     name: "Vishesh",
     photo: "/images/profile/Vishesh.webp",
     role: "Team Member",
-    linkedin: "https://www.linkedin.com/in/vishesh-panwar-80028b276?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+    linkedin:
+      "https://www.linkedin.com/in/vishesh-panwar-80028b276?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
   },
   {
     name: "Samarth",
     photo: "/images/profile/Samarth.webp",
     role: "Team Member",
-    linkedin: "https://www.linkedin.com/in/samarth-paneri-a590a3265?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app"
+    linkedin:
+      "https://www.linkedin.com/in/samarth-paneri-a590a3265?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app",
   },
   {
     name: "Suhani",
     photo: "/images/profile/Suhani.webp",
     role: "Team Member",
-    linkedin: "https://www.linkedin.com/in/suhani-sharma-b159b1248?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+    linkedin:
+      "https://www.linkedin.com/in/suhani-sharma-b159b1248?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
   },
   {
     name: "Tushar",
     photo: "/images/profile/Tushar.webp",
     role: "Team Member",
-    linkedin: "https://www.linkedin.com/in/tushar-jangid-30b560272?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+    linkedin:
+      "https://www.linkedin.com/in/tushar-jangid-30b560272?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
   },
 
   {
@@ -216,9 +228,9 @@ export const advisors = [
     role: "Lead Organizer",
     linkedin: "https://www.linkedin.com/",
   },
-]
+];
 
-export const scteam =[
+export const scteam = [
   {
     name: "Avval Yadav",
     photo: "/images/profile/Avval.webp",
@@ -237,48 +249,72 @@ export const scteam =[
     role: "Co-Chair - Students' Council",
     linkedin: "https://www.linkedin.com/in/shourya-mehra-782b1121b/",
   },
-]
+];
 
 export const faq = [
   {
     question: "What is the event about?",
-    answer: "NIRMAAN is a vibrant celebration of technology, innovation, and creativity."
+    answer:
+      "NIRMAAN is a vibrant celebration of technology, innovation, and creativity.",
   },
   {
     question: "When and where will the event take place?",
-    answer: "NIRMAAN will be held from March 4th to 6th at Poornima University."
+    answer:
+      "NIRMAAN will be held from March 4th to 6th at Poornima University.",
   },
   {
-    question: "Can I participate as an individual or as a team?",
-    answer: "Both individual and team participation is encouraged. Events will specify whether they are solo or team-based."
+    question: "Who can participate in the hackathon?",
+    answer:
+      "Our hackathon is open to all college students, regardless of their major or experience level. Whether you're a beginner or an experienced developer, you're welcome to join!",
   },
   {
-    question: "Is there a registration fee?",
-    answer: "Yes, there is a registration fee of Rs. 500 only."
+    question: "Do I need to have coding experience to participate?",
+    answer:
+      "No prior coding experience is necessary to participate in our hackathon. We welcome students from all backgrounds and skill levels. Mentors and workshops will be available to help you learn and develop your skills during the event.",
   },
   {
-    question: "Can I attend even if I'm not participating in any events?",
-    answer: "Absolutely! NIRMAAN welcomes all tech enthusiasts to join as spectators, explore showcases, and enjoy the tech-inspired atmosphere. Registration is a must."
+    question: "What should I bring to the hackathon?",
+    answer:
+      "You should bring your laptop, charger, any hardware you plan to use, and any other materials you might need for your project. Food and beverages will be provided at the event.",
+  },
+  {
+    question: "Is there any registration fees ?",
+    answer: "Yes, there is a registration fee of Rs.500 only.",
   },
   {
     question: "Can I participate in multiple events?",
-    answer: "Yes, participants are encouraged to explore various events throughout the day. Make sure to check the schedule for overlapping timings."
+    answer:
+      "Yes, participants are encouraged to explore various events throughout the day. Make sure to check the schedule for overlapping timings.",
   },
   {
-    question: "Can I bring my own equipment for certain events?",
-    answer: "For some events, participants may be required to bring their own laptops, devices, or specific tools. Check event descriptions for equipment details."
+    question:
+      "Will there be accommodations available for hackathon participants?",
+    answer:
+      "Yes, we are committed to providing a welcoming and accessible accommodation. Contact us in advance to discuss specific accommodations or requirements.",
   },
   {
-    question: "Will there be accommodations available for hackathon participants?",
-    answer: "Yes, we are committed to providing a welcoming and accessible accommodation. Contact us in advance to discuss specific accommodations or requirements."
+    question:
+      "Can I transfer my registration to another person if I can't attend?",
+    answer:
+      "No, registration transfers may not be possible. Contact our registration team through the provided email for further assistance.",
   },
   {
-    question: "Can I transfer my registration to another person if I can't attend?",
-    answer: "No, registration transfers may not be possible. Contact our registration team through the provided email or at the helpdesk through the app for further assistance."
-  }
+    question: "I want more information or my query is not listed.",
+    answer:
+      "If you need more information or if your query is not listed here, please feel free to contact us via email at 2022csdharam11763@poornima.edu.in or 2022btechccfsdivyanshu11951@poornima.edu.in",
+  },
+  {
+    question: "Where can I find more details about the hackathon?",
+    answer:
+      "For more details about the hackathon, please visit the hackathon section and click on 'View Details' for comprehensive information.",
+  },
 ];
 
-export const components: { title: string; href: string; description: string }[] = [
+export const components: {
+  title: string;
+  href: string;
+  description: string;
+}[] = [
   {
     title: "Hackathon",
     href: "/#hackathon",

@@ -90,7 +90,7 @@ const About = () => {
           </h2>
           <p
             ref={textRef}
-            className="text-xl md:text-2xl text-start text-gray-500"
+            className="text-xl cursor-default md:text-2xl text-start text-gray-500"
           >
             NIRMAAN is a premier technical fest scheduled to take place from
             April 4th, 2024 to April 6th, 2024 at Poornima University, Jaipur.
