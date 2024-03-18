@@ -11,7 +11,7 @@ import Link from "next/link";
 
 gsap.registerPlugin(ScrollTrigger);
 
-const Hackathon = () => {
+const ESports = () => {
   const router = useRouter();
   const esports = useRef<HTMLDivElement | null>(null);
 
@@ -73,7 +73,7 @@ const Hackathon = () => {
             variant={"outline"}
             asChild
           >
-            <Link href="" target="_blank">
+            <Link href="https://drive.google.com/drive/folders/1j6E-2nne-rLCFzZuLdTaxchfjpuKkS6C" target="_blank">
             👁 View Details
             </Link>
           </Button>
@@ -83,4 +83,4 @@ const Hackathon = () => {
   );
 };
 
-export default Hackathon;
+export default ESports;
