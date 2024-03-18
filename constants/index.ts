@@ -94,6 +94,13 @@ export const coreteam = [
       "https://www.linkedin.com/in/nisha-83b879290?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
   },
   {
+    name: "Vishesh",
+    photo: "/images/profile/Vishesh.webp",
+    role: "Team Member",
+    linkedin:
+      "https://www.linkedin.com/in/vishesh-panwar-80028b276?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+  },
+  {
     name: "Shreyansh Jain",
     photo: "/images/profile/Shreyansh.webp",
     role: "Team Member",
@@ -153,13 +160,6 @@ export const coreteam = [
     photo: "/images/profile/Twinkle.webp",
     role: "Team Member",
     linkedin: "https://www.linkedin.com/in/twinkle-gupta-ba8718228",
-  },
-  {
-    name: "Vishesh",
-    photo: "/images/profile/Vishesh.webp",
-    role: "Team Member",
-    linkedin:
-      "https://www.linkedin.com/in/vishesh-panwar-80028b276?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
   },
   {
     name: "Samarth",
