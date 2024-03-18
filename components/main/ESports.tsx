@@ -41,7 +41,7 @@ const Hackathon = () => {
       {/* Image */}
       <div className="w-full md:w-1/3">
         <Image
-          src={"/images/hackathon.webp"}
+          src={"/images/esports.webp"}
           alt="Hackathon"
           className="w-full h-auto border"
           width={500}
