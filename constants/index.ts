@@ -260,7 +260,7 @@ export const faq = [
   {
     question: "When and where will the event take place?",
     answer:
-      "NIRMAAN will be held from March 4th to 6th at Poornima University.",
+      "NIRMAAN will be held from March 4th to 6th at Poornima University, Jaipur.",
   },
   {
     question: "Who can participate in the hackathon?",

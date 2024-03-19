@@ -92,17 +92,7 @@ const About = () => {
             ref={textRef}
             className="text-xl cursor-default md:text-2xl text-start text-gray-500"
           >
-            NIRMAAN is a premier technical fest scheduled to take place from
-            April 4th, 2024 to April 6th, 2024 at Poornima University, Jaipur.
-            Our event will feature a diverse range of activities, including
-            eSports tournaments,36 Hours hackathon, and technology showcases,
-            attracting a broad audience of tech enthusiasts, innovators, and
-            industry professionals from across the region. Our goal is to
-            provide a platform for students to showcase their skills, connect
-            with industry leaders, and gain valuable insights into the latest
-            trends in technology. We are committed to fostering a spirit of
-            innovation and collaboration, and we look forward to welcoming you
-            to our event.
+            NIRMAAN is a premier technical fest scheduled to take place from April 4th, 2024 to April 6th, 2024 at Poornima University, Jaipur. Our event will feature a diverse range of activities, including eSports tournaments, 36 Hours hackathon, and technology showcases, attracting a broad audience of tech enthusiasts, innovators, and industry professionals from across the region. Our goal is to provide a platform for students to showcase their skills, connect with industry leaders, and gain valuable insights into the latest trends in technology. We are committed to fostering a spirit of innovation and collaboration, and we look forward to welcoming you to our event.
           </p>
         </div>
       </div>
