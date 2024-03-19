@@ -32,8 +32,8 @@ const Navbar = () => {
     <nav
       id="nav-box"
       className={cn({
-      "z-40 absolute shadow-primary flex items-center justify-between py-2 tracking-wide w-full px-4 lg:px-12": true,
-      "bg-transparent": isSidebarOpen,
+      "z-40 shadow-primary fixed flex items-center justify-between py-2 tracking-wide w-full px-4 lg:px-12": true,
+      "bg-transparent ": isSidebarOpen,
       "backdrop-blur-2xl": !isSidebarOpen,
     })}
     >

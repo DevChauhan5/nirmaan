@@ -75,110 +75,123 @@ export const coreteam = [
     linkedin: "https://www.linkedin.com/in/divyanshu-upadhyaya-2a7953251",
   },
   {
+    name: 'Dev Chauhan',
+    photo: '/images/profile/Dev.webp',
+    role: 'Captain',
+    linkedin: 'https://www.linkedin.com/in/dev-chauhan-7646a125b?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app'
+  },
+  {
     name: "Aman Krishna",
     photo: "/images/profile/Aman.webp",
-    role: "Team Member",
+    role: "Vice-Captain",
     linkedin: "https://www.linkedin.com/in/aman-krishna-19585823a/",
   },
   {
     name: "Manu Sharma",
     photo: "/images/profile/Manu.webp",
-    role: "Team Member",
+    role: "Vice-Captain",
     linkedin: "https://www.linkedin.com/in/mhimanuhu",
   },
   {
     name: "Nisha",
     photo: "/images/profile/Nisha.webp",
-    role: "Team Member",
+    role: "Vice-Captain",
     linkedin:
       "https://www.linkedin.com/in/nisha-83b879290?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
   },
   {
-    name: "Vishesh",
+    name: "Vishesh Panwar",
     photo: "/images/profile/Vishesh.webp",
-    role: "Team Member",
+    role: "Vice-Captain",
     linkedin:
       "https://www.linkedin.com/in/vishesh-panwar-80028b276?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
   },
   {
     name: "Shreyansh Jain",
     photo: "/images/profile/Shreyansh.webp",
-    role: "Team Member",
+    role: "Vice-Captain",
     linkedin: "https://www.linkedin.com/in/shreyanshjain1206",
   },
   {
-    name: "Unnati",
+    name: "Unnati Arora",
     photo: "/images/profile/Unnati.webp",
-    role: "Team Member",
+    role: "Vice-Captain",
     linkedin:
       "https://www.linkedin.com/in/unnati-arora-a279772ba?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BJrAhpdbbSGOIMc13sPFz7A%3D%3D",
   },
   {
-    name: "Daksha",
+    name: "Daksha Soni",
     photo: "/images/profile/Daksha.webp",
-    role: "Team Member",
+    role: "Captain",
     linkedin:
       "https://www.linkedin.com/in/daksha-soni-14052224b?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
   },
   {
-    name: "Karunesh",
+    name: "Karunesh Sharma",
     photo: "/images/profile/Karunesh.webp",
-    role: "Team Member",
+    role: "Captain",
     linkedin:
       "https://www.linkedin.com/in/karunesh-sharma-22973b272?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
   },
   {
-    name: "Lavisha",
+    name: "Lavisha Bhawnani",
     photo: "/images/profile/Lavisha.webp",
-    role: "Team Member",
+    role: "Captain",
     linkedin:
       "https://www.linkedin.com/in/lavisha-bhawnani-265015261?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
   },
   {
-    name: "Navyanshi",
+    name: "Navyanshi Joshi",
     photo: "/images/profile/Navyanshi.webp",
-    role: "Team Member",
+    role: "Captain",
     linkedin:
       "https://www.linkedin.com/in/navyanshi-joshi-35a47b23b?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
   },
   {
-    name: "Rudraksh",
+    name: "Rudraksh Sharma",
     photo: "/images/profile/Rudraksh.webp",
-    role: "Team Member",
+    role: "Captain",
     linkedin:
       "https://www.linkedin.com/in/rudraksh-sharma-7369892a5?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
   },
   {
-    name: "Surbhi",
+    name: "Surbhi Khatri",
     photo: "/images/profile/Surbhi.webp",
-    role: "Team Member",
+    role: "Captain",
     linkedin:
       "https://www.linkedin.com/in/surbhi-khatri-57245b286?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
   },
   {
-    name: "Twinkle",
+    name: "Ronak Tak",
+    photo: "/images/profile/gungun.webp",
+    role: "Captain",
+    linkedin:
+      "https://www.linkedin.com/in/ronak-tak-a77554243?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+  },
+  {
+    name: "Twinkle Gupta",
     photo: "/images/profile/Twinkle.webp",
-    role: "Team Member",
+    role: "Captain",
     linkedin: "https://www.linkedin.com/in/twinkle-gupta-ba8718228",
   },
   {
-    name: "Samarth",
+    name: "Samarth Paneri",
     photo: "/images/profile/Samarth.webp",
-    role: "Team Member",
+    role: "Vice-Captain",
     linkedin:
       "https://www.linkedin.com/in/samarth-paneri-a590a3265?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app",
   },
   {
-    name: "Suhani",
+    name: "Suhani Sharma",
     photo: "/images/profile/Suhani.webp",
-    role: "Team Member",
+    role: "Captain",
     linkedin:
       "https://www.linkedin.com/in/suhani-sharma-b159b1248?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
   },
   {
-    name: "Tushar",
+    name: "Tushar Jangid",
     photo: "/images/profile/Tushar.webp",
-    role: "Team Member",
+    role: "Vice-Captain",
     linkedin:
       "https://www.linkedin.com/in/tushar-jangid-30b560272?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
   },
@@ -186,47 +199,40 @@ export const coreteam = [
   {
     name: "Aman Chaurvedi",
     photo: "/images/profile/AmanC.webp",
-    role: "Team Member",
+    role: "Captain",
     linkedin: "https://www.linkedin.com/in/aman-chaturvedi-841721262",
   },
   {
     name: "Abhinav Sharma",
     photo: "/images/profile/Abhinav.webp",
-    role: "Team Member",
+    role: "Vice-Captain",
     linkedin: "https://www.linkedin.com/in/abhinav-sharma-41a036291",
   },
-];
-
-export const advisors = [
   {
-    name: "Dharampal Singh",
-    photo: "/images/demo.jpeg",
-    role: "Lead Organizer",
+    name: "Aastha Vashistha",
+    photo: "/images/profile/aashta.webp",
+    role: "Co-ordinator",
+    linkedin:
+      "https://www.linkedin.com/in/aastha-vashistha-aa3656281?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+  },
+  {
+    name: "Devansh Paliwal",
+    photo: "/images/profile/devansh.webp",
+    role: "Co-ordinator",
     linkedin: "https://www.linkedin.com/",
   },
   {
-    name: "Dharampal Singh",
-    photo: "/images/demo.jpeg",
-    role: "Lead Organizer",
-    linkedin: "https://www.linkedin.com/",
+    name: "Addhyan Nigam",
+    photo: "/images/profile/addh.webp",
+    role: "Co-ordinator",
+    linkedin:
+      "https://www.linkedin.com/in/addhyan-nigam-741361262?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
   },
   {
-    name: "Dharampal Singh",
-    photo: "/images/demo.jpeg",
-    role: "Lead Organizer",
-    linkedin: "https://www.linkedin.com/",
-  },
-  {
-    name: "Dharampal Singh",
-    photo: "/images/demo.jpeg",
-    role: "Lead Organizer",
-    linkedin: "https://www.linkedin.com/",
-  },
-  {
-    name: "Dharampal Singh",
-    photo: "/images/demo.jpeg",
-    role: "Lead Organizer",
-    linkedin: "https://www.linkedin.com/",
+    name: "Manish kumar kumawat",
+    photo: "/images/profile/manish.webp",
+    role: "Co-ordinator",
+    linkedin: "https://www.linkedin.com/in/manishkumarkumawat",
   },
 ];
 
@@ -279,7 +285,12 @@ export const faq = [
   },
   {
     question: "Is there any registration fees ?",
-    answer: "Yes, there is a registration fee of Rs.500 only.",
+    answer: `Yes, there will be a normal registration fee for the NIRMAAN event which will include:
+    Hackathon: Rs. 500/- ,
+    Esports BGMI: Rs. 100/- ,
+    Esports COD: Rs. 100/- and
+    Other Events and sessions are free of Cost!
+    `,
   },
   {
     question: "Can I participate in multiple events?",
