@@ -6,6 +6,7 @@ import { TypeAnimation } from "react-type-animation";
 import { Button } from "../ui/button";
 import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
+import Image from "next/image";
 
 const Hero = () => {
   useGSAP(() => {
@@ -46,9 +47,23 @@ const Hero = () => {
       >
         <source src="/hero-vid.webm" type="video/webm" />
       </video>
+      {/* <Image
+        src={"/svgs/hero1.svg"}
+        alt='nirmaan'
+        className='hidden md:flex absolute top-0 left-0 -translate-x-36 translate-y-52'
+        height={600}
+        width={600}
+        />
+        <Image
+        src={"/svgs/hero2.svg"}
+        alt='nirmaan'
+        className='my-4 absolute top-0 right-0 translate-y-20 center translate-x-1/2 md:-translate-x-12 md:translate-y-32 w-64 h-64 md:w-[300px] md:h-[300px]'
+        height={300}
+        width={300}
+        /> */}
       <h1
         id="hero-text"
-        className="opacity-0 text-6xl mt-32 mb-4 uppercase md:text-9xl lg:text-[10rem] font-extrabold bg-clip-text text-transparent bg-[linear-gradient(to_right,theme(colors.yellow.400),theme(colors.yellow.300),theme(colors.orange.200),theme(colors.yellow.300),theme(colors.yellow.400))] bg-[length:200%_auto] animate-gradient"
+        className="opacity-0 text-8xl mt-28 mb-4 uppercase md:text-9xl lg:text-[13rem] font-extrabold bg-clip-text text-transparent bg-[linear-gradient(to_right,theme(colors.yellow.400),theme(colors.yellow.300),theme(colors.orange.200),theme(colors.yellow.300),theme(colors.yellow.400))] bg-[length:200%_auto] animate-gradient"
       >
         NIRMAAN
       </h1>
@@ -93,7 +108,7 @@ const Hero = () => {
           asChild
         >
           <Link
-            href="https://drive.google.com/drive/folders/1h4pbHqvO1qIeR1jl0mrpJ6FEIyGUT3Mt"
+            href="https://drive.google.com/file/d/1wdT-TDGi_CiK_UDUMVrKEs2WVyhGJ5c4/view"
             target="_blank"
           >
             View Schedule
