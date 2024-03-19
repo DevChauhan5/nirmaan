@@ -26,7 +26,7 @@ export default function NavigationMenuDemo() {
           <NavigationMenuContent className="bg-background">
             <ul className="grid gap-3 p-4 md:w-[400px]  lg:grid-cols-[.75fr_1fr]">
               <ListItem href="/#about" title="AboutUs">
-                About Nirmaan&apos;24
+                About NIRMAAN
               </ListItem>
               <ListItem href="/#faq" title="FAQ">
                 Frequently Asked Questions

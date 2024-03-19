@@ -43,7 +43,7 @@ const Navbar = () => {
           href={"/"}
           className="opacity-0 text-3xl lg:text-3xl font-extrabold bg-clip-text text-transparent bg-[linear-gradient(to_right,theme(colors.yellow.400),theme(colors.yellow.300),theme(colors.orange.200),theme(colors.yellow.300),theme(colors.yellow.400))] bg-[length:200%_auto] animate-gradient"
         >
-          NIRMAAN&apos;24
+          NIRMAAN
         </Link>
       </div>
 

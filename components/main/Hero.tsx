@@ -50,7 +50,7 @@ const Hero = () => {
         id="hero-text"
         className="opacity-0 text-6xl mt-32 mb-4 uppercase md:text-9xl lg:text-[10rem] font-extrabold bg-clip-text text-transparent bg-[linear-gradient(to_right,theme(colors.yellow.400),theme(colors.yellow.300),theme(colors.orange.200),theme(colors.yellow.300),theme(colors.yellow.400))] bg-[length:200%_auto] animate-gradient"
       >
-        NIRMAAN&#39;24
+        NIRMAAN
       </h1>
 
       <p

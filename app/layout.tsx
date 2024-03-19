@@ -11,7 +11,7 @@ const fjalla_one = Fjalla_One({
 });
 
 export const metadata: Metadata = {
-  title: "NIRMAAN'24",
+  title: "NIRMAAN",
   description: "Technical Festival of Poornima University",
 };
 
